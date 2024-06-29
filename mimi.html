@@ -1,0 +1,27 @@
+<head>
+	<title> La storia del mio sashMIMI </title>	
+</head>
+<body>
+	<div id="output"> 
+		</div>
+	<script>
+	const text = "BEH SI LA MIMOSAAAAA DI ANESKETHHHHHH CANTA  PER SEMPREEEE PER LA MIIIIMIIIIIIIIIII SIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII.";
+let index = 0;
+const speed = 100; // Velocità in millisecondi
+
+function typeWriter() {
+  if (index < text.length) {
+    document.getElementById("output").innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+// Avvia la funzione quando la pagina è caricata
+window.onload = function() {
+  typeWriter();
+};
+
+		
+	</script>	
+</body>
